@@ -1,0 +1,6 @@
+.ng-invalid.ng-touched{
+    border-color: red;/* border of textbox is changed*/
+}
+.error-block{
+    color: red;
+}

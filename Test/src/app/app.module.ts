@@ -10,12 +10,18 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HousingService } from './services/housing.service';
 import { AddPropertyComponent } from './property/add-property/add-property.component';
 import { PropertyDetailComponent } from './property/property-detail/property-detail.component';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { UserLoginComponent } from './User/UserLogin/UserLogin/UserLogin.component';
+import { UserRegisterComponent } from './User/UserRegister/UserRegister/UserRegister.component';
+
 //you can find this part in link displayed in url.Array is mentioned coz an app can have many routes
 const appRoutes: Routes =[
   {path: '', component: PropertyListComponent},
-  {path: 'rent-property', component: PropertyListComponent},
-  {path: 'add-property', component: AddPropertyComponent},
-  {path: 'property-detail/:id', component: PropertyDetailComponent},
+  {path: 'Rent-Property', component: PropertyListComponent},
+  {path: 'Add-Property', component: AddPropertyComponent},
+  {path: 'Property-Details/:id', component: PropertyDetailComponent},
+  {path: 'User/Login', component: UserLoginComponent},
+  {path: 'User/Register', component: UserRegisterComponent},
   {path: '**', component: PropertyListComponent}//this is error link 
 ]
 @NgModule({
@@ -23,12 +29,13 @@ const appRoutes: Routes =[
     AppComponent,
     propertycardcomponent,PropertyDetailComponent,
     PropertyListComponent,
-      NavBarComponent,
+      NavBarComponent,UserLoginComponent,UserRegisterComponent,
       AddPropertyComponent
    ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule,ReactiveFormsModule,
+    FormsModule,
     HttpClientModule,//this is where we need to add the data file i.e., properties.json
     RouterModule.forRoot(appRoutes)
   ],

@@ -16,9 +16,9 @@ export class HousingService {
     map(data=>{
       const propertiesArray: Array<Iproperty> = [];
       for(const id in data){
-        if(data.hasOwnProperty(id)&& data[id].SellRent === SellRent){
-          propertiesArray.push(data[id]);
-        }
+        //if(data.hasOwnProperty(id)&& data[id].SellRent === SellRent){
+        //  propertiesArray.push(data[id]);
+        //}
       }
       return propertiesArray;
     })
