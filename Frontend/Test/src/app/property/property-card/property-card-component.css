@@ -1,4 +1,36 @@
-.propImg{
-    width: 200px;
+
+/*The zoomed image shouldnt go out of the card, but the size of the image is affected here*/
+.card-img-wrapper{
+    overflow: hidden;
+}
+/*this is mainly to zoom the image smoothly*/
+.card:hover img{
+    transform: scale(1.1,1.1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: 200px;
+    opacity: .7;/*when we move cursor, color of image will be changed*/
+}
+/*though we move the cursor away, the zoomin will get zoomout after few secs*/
+.card img{
+    transform: scale(1,1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
     height: 200px;
 }
+.member-icons{
+    position: absolute; /* this will give the buttons to place abouve the image */
+    bottom: 100%;
+    left: 50%;
+    top: 50%;
+    display: none;/* hides the button*/
+    transform: translate(-50%, -50%); 
+}
+.card-img-wrapper:hover .member-icons{
+    bottom: 0;
+    display: block;/*when the cursor is around the buttons will be displayed*/
+}
+.animate{
+    transition: all 0.5s ease-in-out;/*moves the button 0.5seconds when cursor is hovered*/
+}
+

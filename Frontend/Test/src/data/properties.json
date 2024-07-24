@@ -1,0 +1,53 @@
+
+[ 
+    {
+    "id": 1,
+    "SellRent": 1,
+    "Name": "Birla House",
+    "Type": "House",
+    "Price": "Rs.20000",
+    "Image": "image1"
+    }, 
+    {
+      "id": 2,
+      "SellRent": 2,
+      "Name": "Tata House",
+      "Type": "House",
+      "Price": "Rs.25000",
+      "Image": "image2"
+    },
+    {
+      "id": 3,
+      "SellRent": 1,
+      "Name": "VPP House",
+      "Type": "Apartment",
+      "Price": "Rs.50000",
+      "Image": "image3"
+    },
+    {
+      "id": 4,
+      "SellRent": 1,
+      "Name": "ABC House",
+      "Type": "Villa",
+      "Price": "Rs.60000",
+      "Image": "image4"
+    }, 
+    {
+      "id": 5,
+      "SellRent": 2,
+      "Name": "BJ House",
+      "Type": "Villa",
+      "Price": "Rs.30000",
+      "Image": "image5"
+    },
+    {
+      "id": 6,
+      "SellRent": 1,
+      "Name": "PP House",
+      "Type": "Apartment",
+      "Price": "Rs.38000"
+    
+    }
+ 
+  ]
+
