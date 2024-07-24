@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-img-wrapper">
+   <!--<img class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/47/24/a-simple-house-vector-1854724.jpg">--> 
+    <img *ngIf="property.Image" class="card-img-top" src="assets/images/{{property.Image}}.jpg">
+    <img *ngIf="!property.Image" class="card-img-top" src="https://cdn5.vectorstock.com/i/1000x1000/47/24/a-simple-house-vector-1854724.jpg+++">
+    <ul class="list-inline text-center member-icons animate">
+        <li class="list-inline-item">
+            <button class="btn btn-primary" routerLink="/property-detail/{{property.id}}" ><i class="fa-regular fa-pen-to-square"></i></button>
+        </li>
+        <li class="list-inline-item">
+            <button class="btn btn-primary"><i class="fa-solid fa-id-badge"></i></button>
+        </li>
+    </ul>
+        <div class=" card-body p-3">
+            <h3>{{property.id}}{{property.Type}}</h3>
+            <h4>{{property.Name}}</h4>
+             <h4>{{property.Price}}</h4>
+         </div>
+    </div>
+ </div>
+ 
